@@ -84,14 +84,23 @@
         <!-- <abbr title=""></abbr>  缩略语 -->
         <!-- <sup></sup><sub></sub>上标和下标 -->
         <p>x<sup>2</sup>=x*x </p> 
-        <table border="1">
+        <table border="1" style=" word-break:keep-all">
+            <caption>我是表格标题啊</caption>
+            <!-- 同一列样式一致 -->
+            <colgroup>
+            <col style="background:yellow" span="1">
+            </colgroup>
             <tr>
                 <th>表头</th>
                 <th>表头</th>
                 <th>表头</th>
             </tr>
             <tr>
+                <td rowspan="2">表内容单元格</td>
                 <td>表内容单元格</td>
+                <td><a href="">操作</a></td>
+            </tr>
+            <tr>         
                 <td>表内容单元格</td>
                 <td><a href="">操作</a></td>
             </tr>
@@ -104,17 +113,49 @@
                 <td>表内容单元格</td>
                 <td>表内容单元格</td>
                 <td><a href="">操作</a></td>
-            </tr>
-            <tr>
-                <td>表内容单元格</td>
-                <td>表内容单元格</td>
-                <td style=" word-break:keep-all"><a href="">操作</a></td>
             </tr>
             <tr>
                 <td>总计</td>
                 <td colspan="2">1000</td>
             </tr>
         </table>
+        <form action="" method="post">
+            <p>这里以后是一个侧栏</p>
+            <p>标题</p>
+            <label for="mail">请输入邮箱地址：</label>
+            <input type="email" value="这是一个文本输入框" id= "mail">
+            <p>邮箱地址请按要求格式输入</p>
+            <label for="password" >请输入密码：</label>
+            <input type="text" value="这是一个文本输入框" id="password">
+            <label for="repeat"  >请重复输入密码：</label>
+            <input type="text" value="这是一个文本输入框" id =repeat>
+            <p>密码轻微6-16位英文数字</p>  
+            <label for="">性别：</label>
+            <label for=""><input type="radio" checked="checked" name="sex">男</label>  
+            <label for=""><input type="radio" name="sex">女</label>  
+            <select name="" id="">
+                <option value="北京">北京</option>
+                <option value="上海" selected>上海</option>
+                <option value="广州">广州</option>
+                <option value="深圳">深圳</option>
+            </select>
+            <label for="">爱好：</label>
+            <input type="checkbox" name="hobby">运动
+            <input type="checkbox" name="hobby">艺术
+            <input type="checkbox" name="hobby">科学
+            <label for="">个人描述：</label>
+            <textarea style="overflow:hidden">这是一个多行输入框，输入您的个人描述</textarea>
+            <button type="submit">确认提交</button>
+
+            
+            
+
+        </form>
+      
+              
+         
+
+        
 
         
    
