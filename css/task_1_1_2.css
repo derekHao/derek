@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    background:grey;
+    /* position: relative; */
+}
+#nav ul{
+    float: right;
+    text-align: center
+
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%) */
+}
+#nav ul li{
+    float: left;
+    margin-right: 20px
+}
