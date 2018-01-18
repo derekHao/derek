@@ -7,17 +7,27 @@ a{
 }
 #nav{
     background:grey;
-    /* position: relative; */
+    position: relative;
+    height: 50px;
+    width: 100%
+    
+}
+#nav img{
+    height: 50px;
+    float: left
 }
 #nav ul{
     float: right;
-    text-align: center
-
-    /* position: absolute;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%) */
+    right: 0; 
+    transform: translateY(-50%);
 }
 #nav ul li{
     float: left;
-    margin-right: 20px
+    margin-right: 20px;
+}
+img{
+   width: 200px;
+   height: 200px
 }

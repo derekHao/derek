@@ -1,0 +1,23 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 垂直水平居中 */
+.wrap{
+    height:500px;
+    width: 500px;
+    background:#fff;
+    position: relative;
+    border: 1px solid black;
+}
+.content{
+    height:100px;
+    width: 100px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+}
