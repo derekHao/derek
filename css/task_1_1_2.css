@@ -5,6 +5,9 @@ a{
     margin: 0;
     padding: 0;
 }
+body{
+    background:gainsboro;
+}
 #nav{
     background:grey;
     position: relative;
@@ -25,9 +28,16 @@ a{
 }
 #nav ul li{
     float: left;
+    /* display: inline; */
     margin-right: 20px;
 }
 img{
    width: 200px;
    height: 200px
+}
+#first {
+ 
+    margin: 20px;
+    padding: 20px;
+    background: white
 }

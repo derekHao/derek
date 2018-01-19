@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: gray
+}
 /* 垂直水平居中 */
 .wrap{
     height:500px;
@@ -18,6 +21,7 @@
     background: black;
     position: absolute;
     top: 50%;
+    /* right: 0; */
     left: 50%; 
     transform: translate(-50%,-50%);
 }
