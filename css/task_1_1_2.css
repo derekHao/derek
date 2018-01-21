@@ -1,15 +1,27 @@
 a{
     text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: grey
 }
 *{
     margin: 0;
     padding: 0;
 }
+p{
+    text-indent: 2em;
+
+}
+h1,h2,h3,h4{
+    padding: 5px;
+    margin: 5px;
+}
 body{
     background:gainsboro;
 }
 #nav{
-    background:grey;
+    background:black;
     position: relative;
     height: 50px;
     width: 100%
@@ -35,9 +47,13 @@ img{
    width: 200px;
    height: 200px
 }
-#first {
- 
+#container {
     margin: 20px;
+
+  
+}
+#container div{
+    margin-bottom:20px;
     padding: 20px;
-    background: white
+    background: white 
 }

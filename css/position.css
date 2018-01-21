@@ -4,9 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: gray
-}
+
 /* 垂直水平居中 */
 .wrap{
     height:500px;
