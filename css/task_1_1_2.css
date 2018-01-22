@@ -1,11 +1,11 @@
 a{
     text-decoration: none;
+  
+}
+li a{
     color: white;
 }
-p a{
-    color: blue;
-}
-li{
+ul{
     list-style-type: none;
 }
 a:hover{
@@ -14,6 +14,8 @@ a:hover{
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 p{
     text-indent: 2em;
@@ -58,15 +60,34 @@ img{
 
   
 }
-#container div{
+#container>div{
     margin-bottom:20px;
     padding: 20px;
     background: white 
 }
 .photo{
     border: 1px solid black;
-    height: 200px;
-    width: 200px;
+    height: 260px;
+    width: 260px;
     position: relative;
+    margin-bottom: 20px;
 }
-.photo dt
+dt{
+    display: block;
+}
+.photo dd{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.photo dt{
+    text-align:center;
+    margin: 10px 0 10px 0;
+}
+ol{
+    margin-left: 50px;
+}
+table{
+    border: 1px solid black;
+    /* border-collapse:collapse; */
+}
