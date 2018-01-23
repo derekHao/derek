@@ -87,7 +87,19 @@ dt{
 ol{
     margin-left: 50px;
 }
+tr,th,td{
+    border: 1px solid black;
+    border-collapse:collapse;
+}
 table{
     border: 1px solid black;
-    /* border-collapse:collapse; */
+    border-collapse:collapse;
+    width: 100%
+}
+th{
+    background: black;
+    color: white
+}
+table:nth-child(6){
+    background: gray
 }
