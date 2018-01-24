@@ -135,37 +135,62 @@
                 </tr>
             </table>
         </div>
-        <div>
+        <div id="fifth">
             <form action="" method="post">
                 <p>这里以后是一个侧栏</p>
-                <p>标题</p>
-                <label for="mail">请输入邮箱地址：</label>
-                <input type="email" value="这是一个文本输入框" id= "mail">
-                <p>邮箱地址请按要求格式输入</p>
-                <label for="password" >请输入密码：</label>
-                <input type="text" value="这是一个文本输入框" id="password">
-                <label for="repeat"  >请重复输入密码：</label>
-                <input type="text" value="这是一个文本输入框" id =repeat>
-                <p>密码轻微6-16位英文数字</p>  
-                <label for="">性别：</label>
-                <label for=""><input type="radio" checked="checked" name="sex">男</label>  
-                <label for=""><input type="radio" name="sex">女</label>  
-                <select name="" id="">
-                    <option value="北京">北京</option>
-                    <option value="上海" selected>上海</option>
-                    <option value="广州">广州</option>
-                    <option value="深圳">深圳</option>
-                </select>
-                <label for="">爱好：</label>
-                <input type="checkbox" name="hobby">运动
-                <input type="checkbox" name="hobby">艺术
-                <input type="checkbox" name="hobby">科学
-                <label for="">个人描述：</label>
-                <textarea style="overflow:hidden">这是一个多行输入框，输入您的个人描述</textarea>
+                <table id="info">
+                    <tr>
+                    <td><label for="mail">请输入邮箱地址：</label></td>
+                    <td><input type="email" value="这是一个文本输入框" id= "mail"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><span>邮箱地址请按要求格式输入</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password" >请输入密码：</label></td>
+                        <td><input type="password" value="这是一个文本输入框" id="password"><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="repeat"  >请重复输入密码：</label></td>
+                        <td><input type="password" value="这是一个文本输入框" id =repeat></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><span>密码请为6-16位英文数字</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">性别：</label></td>
+                        <td> <label for=""><input type="radio" checked="checked" name="sex">男</label>  
+                             <label for=""><input type="radio" name="sex">女</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="">城市：</label></td>
+                        <td> <select name="" id="">
+                                <option value="北京">北京</option>
+                                <option value="上海" selected>上海</option>
+                                <option value="广州">广州</option>
+                                <option value="深圳">深圳</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">爱好：</label></td>
+                        <td><input type="checkbox" name="hobby">运动
+                            <input type="checkbox" name="hobby">艺术
+                            <input type="checkbox" name="hobby">科学
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">个人描述：</label></td>
+                        <td> <textarea style="overflow:hidden">这是一个多行输入框，输入您的个人描述</textarea></td>
+                    </tr>  
+                </table>
                 <button type="submit">确认提交</button>
             </form>
         </div>
         
-    </div>     
+    </div>          
 </body>
 </html>

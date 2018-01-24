@@ -100,6 +100,17 @@ th{
     background: black;
     color: white
 }
-table:nth-child(6){
+#fourth tr:last-child{
     background: gray
 }
+button{
+    height: 40px;
+    width: 100%;
+    color: white;
+    background: rgb(78, 78, 151);
+    border-radius: 10px;
+}
+#info td,#info tr,#info{
+    border:0
+}
+
