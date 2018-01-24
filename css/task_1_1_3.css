@@ -1,0 +1,17 @@
+#container{
+    margin: 20px;
+    background: #eee;
+    height: 500px;
+    border: #999 solid 1px
+}
+#left{
+    width: 200px;
+    margin: 20px;
+    float: left;
+    background: #ffffff
+
+}
+img{
+    height: 80px;
+    width: 80px;
+}
