@@ -1,17 +1,51 @@
 #container{
     margin: 20px;
     background: #eee;
-    height: 500px;
-    border: #999 solid 1px
+    /* height: 500px; */
+    border: #999 solid 1px;
+    overflow: hidden
 }
 #left{
     width: 200px;
     margin: 20px;
     float: left;
-    background: #ffffff
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #000
+    /* height: 100%; */
 
 }
 img{
     height: 80px;
     width: 80px;
+    float: left;
+    /* img为 display:inline，默认值baseline与bottom有一段空白距离 */
+    /* 第二种方式也可以： vertical-align:bottom; */
+    display: block
+}
+#left p{
+    float: right;
+}
+#right{
+    width: 120px;
+    padding: 20px 20px 0 20px;
+    float: right;
+    background: #ffffff;
+    margin: 20px;
+    border: 1px solid #000
+    
+    /* height: 100%; */
+     
+}
+#right img{
+    margin-bottom:20px 
+}
+#center{
+    background: #ffffff;
+    padding: 20px;
+    margin:20px 160px 20px 240px ;
+    border: 1px solid #000
+    
+    /* width: 100%; */
+
 }
