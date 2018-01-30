@@ -7,12 +7,30 @@ body,html{
     height: 200px;
     width: 400px;
     background: gray;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     position: absolute;
-    top: -50%;
-    left: -50%
-  
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+#upper-left{
+    height: 50px;
+    width: 50px;
+    background: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 50px
 
-
+}
+#lower-right{
+    height: 50px;
+    width: 50px;
+    background: yellow;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 50px
 }
  
