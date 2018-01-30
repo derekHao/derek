@@ -1,0 +1,31 @@
+body{
+    padding: 20px;
+    display: flex;
+  
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#first{
+    width: 150px;
+    height: 120px;
+    border: 1px solid red;
+
+
+}
+#second{
+    width: 150px;
+    height: 100px;
+    border: 1px solid red;
+    
+}
+#third{
+    width: 150px;
+    height: 40px;
+    border: 1px solid red;    
+}
+#forth{
+    width: 150px;
+    height: 200px;
+    border: 1px solid blue;
+    
+}
