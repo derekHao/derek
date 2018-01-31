@@ -1,0 +1,17 @@
+ #container{
+     display: flex;
+     background: green;
+     width: 1000px;
+     height: 500px;
+     flex-direction: row;
+     flex-wrap: wrap;
+     /* flex-flow:  */
+     justify-content: space-between;
+     align-items:center;
+
+ }
+ .item{
+     height: 50px;
+     width: 50px;
+     background: red
+ }
