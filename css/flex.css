@@ -8,6 +8,7 @@
      /* flex-flow:  */
      justify-content: space-between;
      align-items:center;
+     float: right;
 
  }
  .item{
