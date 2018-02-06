@@ -54,7 +54,8 @@ function getData() {
   
   function init() {
     // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
-      btn.onclick = function(){
+      btn.onclick = function(){ 
+      ul_r.innerHTML = "";
       btnHandle();
   }}
   
