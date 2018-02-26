@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tab</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    ul{
+        list-style-type: none;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+    }
+    #container{
+        height: 300px;
+        width: 600px;
+        background:rgb(179, 175, 175);
+        margin: 0 auto;
+        margin-top: 20px;   
+    }
+    li{
+        background:rgb(179, 175, 175);
+        width: 150px;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    #container .select{
+        background: #000000;
+        color: white;
+    }
+    #content{
+        border-top: 1px solid #000000;
+        height: 570px;
+
+    }
+    #content div{
+        height: 100%;
+        width: 100%;
+    }
+
+</style>
+<body>
+    <div id="container">
+          <ul id="tab">
+              <li>111</li>
+              <li>222</li>
+              <li>333</li>
+          </ul>
+          <div id="content">
+              <div>jq</div>
+              <div>css</div>
+              <div>html</div>
+          </div>
+    </div>
+</body>
+<script>
+    var oTab = document.getElementById('tab');
+    var oLi = document.getElementsByTagName('li');
+    oTab.addEventListener("click",function(e){
+        for(var i=0;i<oLi.length;i++){
+            oLi[i].className = "";
+        }
+        e.target.className = "select";
+    })
+</script>
+</html>

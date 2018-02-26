@@ -3,12 +3,12 @@
      background: green;
      width: 1000px;
      height: 500px;
-     flex-direction: row;
-     flex-wrap: wrap;
+     /* flex-direction: row; */
+     /* flex-wrap: wrap; */
      /* flex-flow:  */
      justify-content: space-between;
      align-items:center;
-     float: right;
+     /* float: right; */
 
  }
  .item{

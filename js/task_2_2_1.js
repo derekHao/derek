@@ -63,6 +63,7 @@ r_remove.onclick=function(){
     ipt.focus();
 };
 par.addEventListener("click", function(e) {
+    alert(event.target.nodeName);
     if (event.target.nodeName.toLowerCase() == "div") {
         par.removeChild(event.target)
     }
