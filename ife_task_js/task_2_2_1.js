@@ -11,10 +11,16 @@ l_add.onclick=function(){
     if(!reg.test(val)){
         alert("请输入数字");    
     }
-    else{  
+    else if(par.children.length == 60)
+    {
+        alert("超过60个");
+    }
+    else
+    {  
         var odiv = document.createElement('div');
-        odiv.setAttribute("class","num");
-        odiv.innerHTML = val; 
+        odiv.className = "num";
+        odiv.innerHTML = val;
+        odiv.style.height = val*10+"px"; 
         if(par.children.length == 0){
             var first = par.firstElementChild;
             par.insertBefore(odiv,first);
@@ -26,6 +32,8 @@ l_add.onclick=function(){
     };
     ipt.value="";
     ipt.focus();
+ 
+    
 };
 r_add.onclick=function(){
     var val = ipt.value;
@@ -33,10 +41,15 @@ r_add.onclick=function(){
     if(!reg.test(val)){
         alert("请输入数字");
     }
+    else if(par.children.length == 60)
+    {
+        alert("超过60个");
+    }
     else{
         var odiv = document.createElement('div');
         odiv.setAttribute("class","num");
         odiv.innerHTML = val; 
+        odiv.style.height = val*10+"px"; 
         par.appendChild(odiv);
     }
     ipt.value="";
@@ -63,8 +76,22 @@ r_remove.onclick=function(){
     ipt.focus();
 };
 par.addEventListener("click", function(e) {
-    alert(event.target.nodeName);
+    // alert(event.target.nodeName);
     if (event.target.nodeName.toLowerCase() == "div") {
         par.removeChild(event.target)
     }
 })
+var oSort = document.getElementById("sort");
+oSort.onclick = function(){
+    if(par.children.length){
+        for(i=0;i<=par.children.length;i++){
+            for(i=0;i<par.children.length;i++){
+                if(par.children[i].innerHTML>par.children[i+1].innerHTML)
+                {
+                    
+                }
+            } 
+        }
+        // par.removeChild(par.lastChild);
+    }
+}
