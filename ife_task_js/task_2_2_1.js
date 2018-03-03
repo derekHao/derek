@@ -75,12 +75,13 @@ r_remove.onclick=function(){
     }
     ipt.focus();
 };
+//有bug点空白报错
 par.addEventListener("click", function(e) {
-    // alert(event.target.nodeName);
-    if (event.target.nodeName.toLowerCase() == "div") {
-        par.removeChild(event.target)
+    // alert(event.target.nodeName)
+    if (e.target.nodeName.toLowerCase() == "div") {
+        par.removeChild(e.target)
     }
-})
+},false)
 var oSort = document.getElementById("sort");
 oSort.onclick = function(){
     // alert(par.children.length);
