@@ -20,7 +20,7 @@ l_add.onclick=function(){
         var odiv = document.createElement('div');
         odiv.className = "num";
         odiv.innerHTML = val;
-        odiv.style.height = val*10+"px"; 
+        odiv.style.height = val*20+"px"; 
         if(par.children.length == 0){
             var first = par.firstElementChild;
             par.insertBefore(odiv,first);
@@ -49,7 +49,7 @@ r_add.onclick=function(){
         var odiv = document.createElement('div');
         odiv.setAttribute("class","num");
         odiv.innerHTML = val; 
-        odiv.style.height = val*10+"px"; 
+        odiv.style.height = val*20+"px"; 
         par.appendChild(odiv);
     }
     ipt.value="";
@@ -83,15 +83,37 @@ par.addEventListener("click", function(e) {
 })
 var oSort = document.getElementById("sort");
 oSort.onclick = function(){
+    // alert(par.children.length);
     if(par.children.length){
-        for(i=0;i<=par.children.length;i++){
-            for(i=0;i<par.children.length;i++){
-                if(par.children[i].innerHTML>par.children[i+1].innerHTML)
-                {
-                    
-                }
-            } 
+        var arr = new Array;
+        for(i=0;i<par.children.length;i++){
+            arr[i] = par.children[i].innerHTML;
         }
-        // par.removeChild(par.lastChild);
+        arr.sort(function(b,a){
+            return b-a;
+        });
+        for(i=0;i<par.children.length;i++){
+            par.children[i].innerHTML=arr[i];
+            par.children[i].style.height = arr[i]*20+"px";
+        }
+        // alert(arr);
     }
-}
+};
+var oSort1 = document.getElementById("sort1");
+oSort1.onclick = function(){
+    // alert(par.children.length);
+    if(par.children.length){
+        var arr = new Array;
+        for(i=0;i<par.children.length;i++){
+            arr[i] = par.children[i].innerHTML;
+        }
+        arr.sort(function(b,a){
+            return a-b;
+        });
+        for(i=0;i<par.children.length;i++){
+            par.children[i].innerHTML=arr[i];
+            par.children[i].style.height = arr[i]*20+"px";
+        }
+        // alert(arr);
+    }
+};
