@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../framework/jquery-3.3.1.min.js"></script>
+    <style>
+        #a{
+            height: 100px;
+            width: 100px;
+            background: black;
+            /* border: 10px solid red; */
+            padding: 20px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <button>click</button>
+    <div id="a">
+        <!-- 1111
+        <ul id="b">
+            <li id="c">222</li>
+            <li>333</li>
+            <li>444</li>
+        </ul> -->
+    </div>
+</body>
+<script>
+
+    // var a =document.getElementById('a');
+    // a.onclick = function(){
+    //     alert(222);
+    // } 
+    $(function(){
+        
+        
+        $('button').on('click',function(){
+        $('li').css('background','white');
+        var $ipt = $('input');
+        $('#a li:contains('+$ipt.val()+')').css('background','red');
+        //    alert(this.html());
+        })
+        alert($('#a').outerHeight(true));
+        // alert($ipt.val());
+        // $('#a li:contains('+$ipt.val()+')').css('background','red');
+        console.log(navigator.userAgent)
+    });
+
+</script>
+</html>
