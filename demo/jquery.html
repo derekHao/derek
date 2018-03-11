@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../framework/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <button>123</button>
+    <input type="text">
+    <input type="text">
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <script>
+        $(function(){
+            $('button').click(
+                function(){
+                    alert(123);
+                }
+            );
+            $(':input').css({
+                'background':'red'
+            });
+        });
+    </script>
+</body>
+</html>
