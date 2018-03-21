@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../framework/vue.js"></script>
+    <script src="../framework/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <!-- 双大括号绑定html内容 -->
+    <div id="date"></div>
+    <div id="app">
+        {{ message }}
+    </div>
+    <!-- v-bind 绑定元素属性 -->
+    <div id ="app-2">
+        <span title="message">
+            鼠标悬停几秒钟查看此处动态绑定的提示信息！
+        </span>      
+    </div>
+    <!-- v-if 元素是否可见 -->
+    <div id="app-3" v-if="seen">
+        你能看见我么
+    </div>
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos">
+                {{todo.text}}
+            </li>
+        </ol>
+    </div>
+    <div id="app-5">
+        <p>{{message}}</p>
+        <button v-on:click="reversMessage">
+            逆转消息
+        </button>
+    </div>
+    <div id="app-6">
+        <p>{{message}}</p>
+        <input v-model= "message">
+    </div>
+</body>
+<script src="../demojs/vuetest.js">
+</script>
+</html>
